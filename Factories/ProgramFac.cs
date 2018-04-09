@@ -16,7 +16,7 @@ namespace FitnessAppApi
             fp.program = Get(id);
 
             List<Sessiondetails> sdl = new List<Sessiondetails>();
-            foreach (var item in sf.GetBy("ProgramID", id ,"Sorting"))
+            foreach (var item in sf.GetBy("ProgramID", id ,"Sorting","ASC"))
             {
                 Sessiondetails sd = new Sessiondetails();
                 sd.session = item;

@@ -9,31 +9,35 @@ namespace FitnessAppApi.Controllers
 {
     public class SessionController : ApiController
     {
-        // GET api/<controller>
-        public IEnumerable<string> Get()
+        SessionItemFac sif = new SessionItemFac();
+        SessionWeightFac swf = new SessionWeightFac();
+
+        [HttpGet]
+        [Route("api/Session/GetItem/{id}")]
+        public SessionItemDetails GetItem(int id)
         {
-            return new string[] { "value1", "value2" };
+            return sif.GetSessionItem(id);
         }
 
-        // GET api/<controller>/5
-        public string Get(int id)
+        [HttpGet]
+        [Route("api/Session/GetWeights/{id}")]
+        public IEnumerable<SessionWeight> GetWeights(int id)
         {
-            return "value";
+            return swf.GetBy(3,"SessionItemID",id,"Time","DESC");
         }
 
-        // POST api/<controller>
-        public void Post([FromBody]string value)
+        [HttpGet]
+        [Route("api/Session/SetWeight/{id}/{weight}")]
+        public IEnumerable<SessionWeight> SetWeights(int id, int weight)
         {
-        }
+            SessionWeight sw = new SessionWeight();
+            sw.SessionItemID = id;
+            sw.Time = DateTime.Now;
+            sw.Weight = weight;
+            
+            swf.Insert(sw);
 
-        // PUT api/<controller>/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/<controller>/5
-        public void Delete(int id)
-        {
+            return swf.GetBy(3, "SessionItemID", id, "Time", "DESC");
         }
     }
 }

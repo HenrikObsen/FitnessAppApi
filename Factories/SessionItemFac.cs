@@ -26,6 +26,30 @@ namespace FitnessAppApi
         }
 
 
-     }
+        public SessionItemDetails GetSessionItem(int id)
+        {
+            SessionItemDetails sid = new SessionItemDetails();
+
+            using (var cmd = new SqlCommand("SELECT SessionItem.ID, SessionID, ExerciseID, Sets, Reps, Pause, Notes, MuscleGroupID, Name, Image, Video FROM SessionItem INNER JOIN Exercise ON SessionItem.ExerciseID = Exercise.ID WHERE SessionItem.ID=" + id, Conn.CreateConnection()))
+            {
+                var r = cmd.ExecuteReader();
+              
+                Mapper<SessionItemDetails> mapper = new Mapper<SessionItemDetails>();
+
+                if (r.Read())
+                {
+                    sid = mapper.Map(r);
+                }
+
+                r.Close();
+                cmd.Connection.Close();
+
+            }
+
+            return sid;
+        }
+
+
+    }
 
 }

@@ -102,6 +102,30 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Exercises\Images\Armbøjninger.jpg" />
+    <Content Include="Content\Exercises\Images\Bentover-lateral-raises.jpg" />
+    <Content Include="Content\Exercises\Images\Biceps_curls.png" />
+    <Content Include="Content\Exercises\Images\Bænkpres.jpg" />
+    <Content Include="Content\Exercises\Images\Bænkpress-med-smalt-greb.jpg" />
+    <Content Include="Content\Exercises\Images\calf-raises.jpg" />
+    <Content Include="Content\Exercises\Images\Chinups.jpg" />
+    <Content Include="Content\Exercises\Images\Crunches.jpg" />
+    <Content Include="Content\Exercises\Images\Dips2.jpg" />
+    <Content Include="Content\Exercises\Images\Dumbell-curls2.jpg" />
+    <Content Include="Content\Exercises\Images\Dumbell-press.jpg" />
+    <Content Include="Content\Exercises\Images\Dumbell-press2.jpg" />
+    <Content Include="Content\Exercises\Images\Dødløft.jpg" />
+    <Content Include="Content\Exercises\Images\hanging-leg-raises.jpg" />
+    <Content Include="Content\Exercises\Images\lateral-raises3.jpg" />
+    <Content Include="Content\Exercises\Images\lunges.jpg" />
+    <Content Include="Content\Exercises\Images\mavebojninger.jpg" />
+    <Content Include="Content\Exercises\Images\NoImage.jpg" />
+    <Content Include="Content\Exercises\Images\Rows.jpg" />
+    <Content Include="Content\Exercises\Images\skuldre-shugs.jpg" />
+    <Content Include="Content\Exercises\Images\Squat.jpg" />
+    <Content Include="Content\Exercises\Images\Triceps-extensions.jpg" />
+    <Content Include="Content\Exercises\Images\Triceps-kickbacks.jpg" />
+    <Content Include="Content\Exercises\Images\træk-til-bryst.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -141,8 +165,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="Content\inquisitiveness.ogg" />
     <None Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

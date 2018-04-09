@@ -169,6 +169,27 @@ namespace FitnessAppApi
         }
 
         /// <summary>
+        /// Metoden kan retuner x anatal rækker ud fra en kolonne med en bestemt værdi
+        /// </summary>
+        /// <param name="amount">Antal rækker der skal retuneres</param>
+        /// <param name="column">Navnet på kolonnen er skal vælges ud fra</param>
+        /// <param name="value">Værdien der skal være i kolonnen</param>
+        /// <param name="ordercolumn">Navnet på kolonnen der skal sorteres efter</param>
+        /// <param name="direction">Sorteringsretning DESC/ASC</param>
+        /// <returns>Retunere en liste af den valgte model</returns>
+        public List<T> GetBy(int amount, string column, object value, string ordercolumn, string direction = "DESC")
+        {
+            using (var cmd = new SqlCommand("SELECT TOP " + amount + " * FROM " + table + " WHERE " + column + "=@KID ORDER BY " + ordercolumn + " " + direction, Conn.CreateConnection()))
+            {
+                cmd.Parameters.AddWithValue("@KID", value);
+
+                List<T> list = mapper.MapList(cmd.ExecuteReader());
+                cmd.Connection.Close();
+                return list;
+            }
+        }
+
+        /// <summary>
         /// Bruges til at tælle antal rækker i en tabel, ud fra en valgt model
         /// </summary>
         /// <returns>Retunere antal række som typen int</returns>
