@@ -34,6 +34,51 @@ namespace FitnessAppApi.Controllers
         }
 
 
+        //------------- Edit Actions ----------------------
+
+        [HttpGet]
+        [Route("api/Program/Delete/{id}")]
+        public bool DeleteProgram(int id)
+        {
+            pf.Delete(id);
+
+            return true;
+        }
+
+
+        [HttpPost]
+        [Route("api/Program/Add")]
+        public bool Add(Program p)
+        {
+            if (ModelState.IsValid)
+            {
+                pf.Insert(p);
+                return true;
+            }
+            else
+            {
+                return true;
+            }
+            
+        }
+
+        [HttpPost]
+        [Route("api/Program/Update")]
+        public bool Update(Program p)
+        {
+            if (ModelState.IsValid)
+            {
+                pf.Update(p);
+                return true;
+            }
+            else
+            {
+                return true;
+            }
+
+        }
+
+
 
     }
 }
