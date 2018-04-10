@@ -29,5 +29,7 @@ namespace FitnessAppApi
         public string Image { get; set; }
 
         public string Video { get; set; }
+
+        public DateTime LastRun { get; set; }
     }
 }

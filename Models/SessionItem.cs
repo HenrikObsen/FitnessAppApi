@@ -19,6 +19,8 @@ namespace FitnessAppApi
 
 		 public string Notes { get; set; }
 
-	 }
+		 public DateTime LastRun { get; set; }
+
+    }
 
 }

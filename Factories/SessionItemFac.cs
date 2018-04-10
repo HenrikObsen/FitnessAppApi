@@ -13,7 +13,7 @@ namespace FitnessAppApi
         {
             List<SessionItemDetails> list = new List<SessionItemDetails>();
 
-            using (var cmd = new SqlCommand("SELECT SessionItem.ID, SessionID, ExerciseID, Sets, Reps, Pause, Notes, MuscleGroupID, Name, Image, Video FROM SessionItem INNER JOIN Exercise ON SessionItem.ExerciseID = Exercise.ID WHERE SessionItem.SessionID=" + id, Conn.CreateConnection()))
+            using (var cmd = new SqlCommand("SELECT SessionItem.ID, SessionID, ExerciseID, Sets, Reps, Pause, Notes, LastRun, MuscleGroupID, Name, Image, Video FROM SessionItem INNER JOIN Exercise ON SessionItem.ExerciseID = Exercise.ID WHERE SessionItem.SessionID=" + id, Conn.CreateConnection()))
             {
                 Mapper<SessionItemDetails> mapper = new Mapper<SessionItemDetails>();
 
@@ -30,7 +30,7 @@ namespace FitnessAppApi
         {
             SessionItemDetails sid = new SessionItemDetails();
 
-            using (var cmd = new SqlCommand("SELECT SessionItem.ID, SessionID, ExerciseID, Sets, Reps, Pause, Notes, MuscleGroupID, Name, Image, Video FROM SessionItem INNER JOIN Exercise ON SessionItem.ExerciseID = Exercise.ID WHERE SessionItem.ID=" + id, Conn.CreateConnection()))
+            using (var cmd = new SqlCommand("SELECT SessionItem.ID, SessionID, ExerciseID, Sets, Reps, Pause, Notes, LastRun, MuscleGroupID, Name, Image, Video FROM SessionItem INNER JOIN Exercise ON SessionItem.ExerciseID = Exercise.ID WHERE SessionItem.ID=" + id, Conn.CreateConnection()))
             {
                 var r = cmd.ExecuteReader();
               
@@ -47,6 +47,21 @@ namespace FitnessAppApi
             }
 
             return sid;
+        }
+
+        public bool SetLastRun(int id, DateTime d)
+        {
+            
+            using (var cmd = new SqlCommand("UPDATE SessionItem SET LastRun=@LastRun WHERE ID=@ID", Conn.CreateConnection()))
+            {
+                cmd.Parameters.AddWithValue("@ID",id);
+                cmd.Parameters.AddWithValue("@LastRun", d);
+                    
+                cmd.ExecuteNonQuery();                
+                cmd.Connection.Close();
+            }
+
+            return true;
         }
 
 

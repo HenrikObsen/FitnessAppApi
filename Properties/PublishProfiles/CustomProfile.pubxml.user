@@ -6,15 +6,15 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAauS7plPZaEK3hD/pFdvlJwAAAAACAAAAAAAQZgAAAAEAACAAAABnYoJ0pIyhNzu0dahePpHM5MJQxGhXrLTPK3WbroLfoAAAAAAOgAAAAAIAACAAAAB4e+QMY46bieCMtTu0Og43LT93vRG50LYOSc9uXn9gUiAAAAAIVaI/bOseF1tMdFeuLmmykjG/VxoVgX8NIQGSCFckfkAAAACtbuzh8ghJZuYSSZyC1g+sKgv9y+6/gToeNZI7emXn1fMEkf72tpuhTMDmr+31q5rPZRsUTB9MoNItNi4n8Nqg</EncryptedPassword>
-    <_PublishTargetUrl>ftp://ftp.henrikobsen.dk/MyFitnessPlaner</_PublishTargetUrl>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARn/w+/4+Yk6mFxdNCUyskQAAAAACAAAAAAAQZgAAAAEAACAAAACOknY6Lk1wbjvBcY/utsAn+UyGq13taFykGEr3tH5dKwAAAAAOgAAAAAIAACAAAACJUl6mvUQPIgmBbA1rW3IgNSmR6+2SxTbPcclfCZNPCCAAAADxD6NmN5jTBLNewDi05kcZCd2VQ5Q+XVEWbnvQw5SNQEAAAAARSNnl5qRYRnscBD8tbk6GFyX1OXYvvRB1g6RXt0cVO83LYPQ9U008QwQSoCqxP/3+Rh/wVn6dSic9Rw2vjy/d</EncryptedPassword>
+    <_PublishTargetUrl>ftp://ftp.henrikobsen.dk/kd</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/FitnessAppApi.dll">
-      <publishTime>04/08/2018 18:18:26</publishTime>
+      <publishTime>04/10/2018 12:28:23</publishTime>
     </File>
     <File Include="bin/FitnessAppApi.pdb">
-      <publishTime>04/08/2018 18:18:26</publishTime>
+      <publishTime>04/10/2018 12:28:23</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>08/15/2017 14:12:32</publishTime>
@@ -196,8 +196,80 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/System.Web.Webpages.Razor.dll">
       <publishTime>01/28/2015 04:04:30</publishTime>
     </File>
+    <File Include="Content/Exercises/Images/Armbøjninger.jpg">
+      <publishTime>04/08/2018 14:05:02</publishTime>
+    </File>
+    <File Include="Content/Exercises/Images/Bentover-lateral-raises.jpg">
+      <publishTime>04/08/2018 14:09:50</publishTime>
+    </File>
+    <File Include="Content/Exercises/Images/Biceps_curls.png">
+      <publishTime>04/08/2018 14:17:50</publishTime>
+    </File>
+    <File Include="Content/Exercises/Images/Bænkpres.jpg">
+      <publishTime>04/08/2018 14:08:04</publishTime>
+    </File>
+    <File Include="Content/Exercises/Images/Bænkpress-med-smalt-greb.jpg">
+      <publishTime>04/08/2018 14:08:52</publishTime>
+    </File>
+    <File Include="Content/Exercises/Images/calf-raises.jpg">
+      <publishTime>04/08/2018 14:08:34</publishTime>
+    </File>
+    <File Include="Content/Exercises/Images/Chinups.jpg">
+      <publishTime>04/08/2018 14:08:20</publishTime>
+    </File>
+    <File Include="Content/Exercises/Images/Crunches.jpg">
+      <publishTime>04/08/2018 14:09:02</publishTime>
+    </File>
+    <File Include="Content/Exercises/Images/Dips2.jpg">
+      <publishTime>04/08/2018 14:09:28</publishTime>
+    </File>
+    <File Include="Content/Exercises/Images/Dumbell-curls2.jpg">
+      <publishTime>04/08/2018 14:08:14</publishTime>
+    </File>
+    <File Include="Content/Exercises/Images/Dumbell-press.jpg">
+      <publishTime>04/08/2018 14:06:54</publishTime>
+    </File>
+    <File Include="Content/Exercises/Images/Dumbell-press2.jpg">
+      <publishTime>04/08/2018 14:07:20</publishTime>
+    </File>
+    <File Include="Content/Exercises/Images/Dødløft.jpg">
+      <publishTime>04/08/2018 14:08:08</publishTime>
+    </File>
+    <File Include="Content/Exercises/Images/hanging-leg-raises.jpg">
+      <publishTime>04/08/2018 14:08:58</publishTime>
+    </File>
+    <File Include="Content/Exercises/Images/lateral-raises3.jpg">
+      <publishTime>04/08/2018 14:04:32</publishTime>
+    </File>
+    <File Include="Content/Exercises/Images/lunges.jpg">
+      <publishTime>04/08/2018 14:08:26</publishTime>
+    </File>
+    <File Include="Content/Exercises/Images/mavebojninger.jpg">
+      <publishTime>04/08/2018 14:08:40</publishTime>
+    </File>
     <File Include="Content/Exercises/Images/NoImage.jpg">
-      <publishTime>04/08/2018 11:03:19</publishTime>
+      <publishTime>04/08/2018 11:03:20</publishTime>
+    </File>
+    <File Include="Content/Exercises/Images/Rows.jpg">
+      <publishTime>04/08/2018 14:09:40</publishTime>
+    </File>
+    <File Include="Content/Exercises/Images/skuldre-shugs.jpg">
+      <publishTime>04/08/2018 14:08:48</publishTime>
+    </File>
+    <File Include="Content/Exercises/Images/Squat.jpg">
+      <publishTime>04/08/2018 14:09:06</publishTime>
+    </File>
+    <File Include="Content/Exercises/Images/Triceps-extensions.jpg">
+      <publishTime>04/08/2018 14:05:22</publishTime>
+    </File>
+    <File Include="Content/Exercises/Images/Triceps-kickbacks.jpg">
+      <publishTime>04/08/2018 14:09:10</publishTime>
+    </File>
+    <File Include="Content/Exercises/Images/træk-til-bryst.jpg">
+      <publishTime>04/08/2018 14:09:44</publishTime>
+    </File>
+    <File Include="Content/inquisitiveness.ogg">
+      <publishTime>04/08/2018 15:18:34</publishTime>
     </File>
     <File Include="Global.asax">
       <publishTime>04/03/2018 11:57:32</publishTime>
@@ -209,7 +281,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/03/2018 11:57:26</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/08/2018 18:18:26</publishTime>
+      <publishTime>04/10/2018 12:28:28</publishTime>
     </File>
   </ItemGroup>
 </Project>

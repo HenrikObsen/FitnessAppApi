@@ -39,5 +39,13 @@ namespace FitnessAppApi.Controllers
 
             return swf.GetBy(3, "SessionItemID", id, "Time", "DESC");
         }
+
+        [HttpGet]
+        [Route("api/Session/SetLastRun/{id}/{lastrun}")]
+        public bool SetLastRun(int id, string lastrun)
+        {
+            DateTime d = DateTime.Parse(lastrun);
+            return sif.SetLastRun(id, d);
+        }
     }
 }
