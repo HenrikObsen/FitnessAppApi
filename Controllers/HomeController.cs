@@ -11,7 +11,8 @@ namespace FitnessAppApi.Controllers
         UserFac uf = new UserFac();
 
         public ActionResult Index()
-        {
+        {            
+            //AutoGen ag = new AutoGen("FitnessAppApi", Request.PhysicalApplicationPath + "App_Data/");
             ViewBag.Name = uf.Get(1).Name;
             return View();
         }

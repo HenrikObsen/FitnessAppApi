@@ -135,6 +135,7 @@
     <Compile Include="Controllers\SessionController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Factories\ExerciseFac.cs" />
+    <Compile Include="Factories\MeasurementFac.cs" />
     <Compile Include="Factories\MuscleGroupFac.cs" />
     <Compile Include="Factories\ProgramFac.cs" />
     <Compile Include="Factories\SessionFac.cs" />
@@ -142,6 +143,7 @@
     <Compile Include="Factories\SessionWeightFac.cs" />
     <Compile Include="Factories\UserFac.cs" />
     <Compile Include="Models\Exercise.cs" />
+    <Compile Include="Models\Measurement.cs" />
     <Compile Include="Models\MuscleGroup.cs" />
     <Compile Include="Models\Program.cs" />
     <Compile Include="Models\RModel\FullProgram.cs" />
@@ -178,7 +180,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\AutoGen\" />
+    <Folder Include="App_Data\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
