@@ -103,8 +103,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Exercises\Images\Armbøjninger.jpg" />
+    <Content Include="Content\Exercises\Images\Beanch_Tricep_Dip_M.png" />
     <Content Include="Content\Exercises\Images\Bentover-lateral-raises.jpg" />
     <Content Include="Content\Exercises\Images\Biceps_curls.png" />
+    <Content Include="Content\Exercises\Images\BodyweightSquat.png" />
+    <Content Include="Content\Exercises\Images\BodyweightWalkingLunge.png" />
+    <Content Include="Content\Exercises\Images\Burpees_M_WorkoutLabs.png" />
     <Content Include="Content\Exercises\Images\Bænkpres.jpg" />
     <Content Include="Content\Exercises\Images\Bænkpress-med-smalt-greb.jpg" />
     <Content Include="Content\Exercises\Images\calf-raises.jpg" />
@@ -119,7 +123,9 @@
     <Content Include="Content\Exercises\Images\lateral-raises3.jpg" />
     <Content Include="Content\Exercises\Images\lunges.jpg" />
     <Content Include="Content\Exercises\Images\mavebojninger.jpg" />
+    <Content Include="Content\Exercises\Images\MountainCrawlers.gif" />
     <Content Include="Content\Exercises\Images\NoImage.jpg" />
+    <Content Include="Content\Exercises\Images\Renegade_Row.png" />
     <Content Include="Content\Exercises\Images\Rows.jpg" />
     <Content Include="Content\Exercises\Images\skuldre-shugs.jpg" />
     <Content Include="Content\Exercises\Images\Squat.jpg" />
